@@ -1,0 +1,30 @@
+<mat-toolbar color='accent'> <span>Server Log
+	Analysis Exercise Solution - Karthi</span> </mat-toolbar>
+
+<!-- <mat-sidenav-container class="example-container"> -->
+<!-- <mat-sidenav mode="side" opened="true"> <a mat-button -->
+<!-- 	routerLink="." (click)="updateChart('request')">No. of Requests/per Minute</a> <br> -->
+<!-- Distribution of: -->
+<!-- <br> -->
+<!-- <a mat-button routerLink="." (click)="updateChart('method')">HTTP methods</a> <br> -->
+<!-- <a mat-button routerLink="." (click)="updateChart('codes')">HTTP answer codes</a> <br> -->
+<!-- <a mat-button routerLink="." (click)="updateChart('size')">Requests 200 & size < 1000B</a> <br> -->
+<!-- </mat-sidenav> <mat-sidenav-content> <app-chart-component></app-chart-component> -->
+<!-- </mat-sidenav-content> </mat-sidenav-container> -->
+
+
+<mat-sidenav-container class="navigation-container">
+<mat-sidenav mode="side" opened="true"> 
+ <br>
+<mat-button-toggle-group name="fontStyle" aria-label="Font Style" [vertical]="true" value="value2">
+  <mat-button-toggle value="value1" (click)="updateChart('request')">No. of Requests/per Minute</mat-button-toggle>
+  <mat-button-toggle value="value2" (click)="updateChart('method')">HTTP methods</mat-button-toggle>
+  <mat-button-toggle value="value3" (click)="updateChart('codes')">HTTP answer codes</mat-button-toggle>
+  <mat-button-toggle value="value4" (click)="updateChart('size')">Requests 200 & size < 1000B</mat-button-toggle>
+</mat-button-toggle-group>
+
+</mat-sidenav> 
+<mat-sidenav-content> 
+
+<app-chart-component></app-chart-component>
+</mat-sidenav-content> </mat-sidenav-container>

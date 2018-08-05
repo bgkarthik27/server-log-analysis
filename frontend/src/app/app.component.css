@@ -1,0 +1,12 @@
+.navigation-container {
+  position: absolute;
+  top: 75px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+}
+
+.button-row a {
+  margin-right: 8px;
+}
